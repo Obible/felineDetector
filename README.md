@@ -24,3 +24,15 @@ Future works (near...)
     - 이건 다른 동물들도 한 20~40개 정도 찍어서 확인해봐야 될 듯
     - 정확도 높다면 사용
     - 정확도 낮다면 모델 학습시키기...
+
+
+(17:47) 할 일
+- (1) 현재 모델(40개 이미지)에서 
+    - (a) 고양이 annotation 얼마나 잘 detect하는지 확인  
+     : Cat Dataset(from kaggle; [link](https://www.kaggle.com/datasets/crawford/cat-dataset/data))의 annotation과 얼마나 일치하는지 (9개만) 유사도 검증 : 점 간의 Euclidean distance 계산
+    - (b) 다른 고양잇과 동물(호랑이, 사자, 치타, 표범)들에도 계산을 잘 하는지 확인
+- (2) 고양이 사진(w/ annotations)을 더 넣으면서 모델의 정확도 판단!
+    - (a) cat dataset(up)에서 턱이랑 bounding box 좌표 찍기 ([link](https://github.com/NaturalIntelligence/imglab))
+    - (b) 이걸로 학습
+- (3) 학습시킨 후에 혹시 야생동물들 잘 계산합니까?
+- ** 시간이 남는다면? tiger model, cheetah model, ...각각 학습시켜서 performance 보기.
